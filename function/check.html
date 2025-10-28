@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8"/>
+  <head>
+    <meta charset="UTF-8" />
     <title>JavaScript</title>
-</head>
+  </head>
 
-<body>
-
-    <button onclick="myFunction(5)">5 * 10 - (-17)</button>
+  <body>
+    <button onclick="mfunctions(67)">execute</button>
 
     <script>
-        function myFunction(x, y, z) {
-            if (y === undefined) {
-                y = 10;
-            }
+      function mfunctions(x, y) {
+        if (y === undefined) y = 66;
+         document.write(x * x + y);
+      }
 
-            if (z === undefined) {
-                z = -17;
-            }
-            document.write(x * y - z);
-        }
+     
     </script>
-
-</body>
-
+  </body>
 </html>
