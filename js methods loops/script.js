@@ -1,4 +1,5 @@
 let message1 = "hello world";
+
 let upper = message1.toUpperCase();
 console.log(upper); // Output: "HELLO WORLD"
 
@@ -10,13 +11,18 @@ let str = "JavaScript is fun";
 console.log(str.startsWith("Java"));   // true
 console.log(str.startsWith("Script")); // false
 
-let pattern = /^hello/; // regex to check if string starts with "hello"
-let text = "hello world";
-console.log(pattern.test(text)); // true
+let text = "Visit Microsoft!";
+let result = text.replace("Microsoft", "Burhan");
 
 
-let anotherPattern = /world$/; // ends with "world"
-console.log(anotherPattern.test(text)); // true
+
+// let pattern = /^hello/; // regex to check if string starts with "hello"
+// let text = "hello world";
+// console.log(pattern.test(text)); // true
+
+
+// let anotherPattern = /world$/; // ends with "world"
+// console.log(anotherPattern.test(text)); // true
 
 //regular expression
 let message = "My pin is 1234";
@@ -30,11 +36,11 @@ console.log(newMessage); // "My pin is ****"
 
 //loop
 for (let i = 1; i <= 5; i++) {
-  console.log("Hi " + i); 
+  console.log("Hi " + "Burhan"); 
 }
 
 //switch 
-let fruit = "apple";
+let fruit = "orange";
 
 switch (fruit) {
   case "apple":
@@ -53,4 +59,8 @@ switch (fruit) {
 // Without break, JavaScript will continue to run the next case even if one already matched. This is called "fall-through".
 
 // So we use break; to exit the switch once a match is found.
+
+let a = (Math.random()*10)
+console.log(Math.floor(a))
+console.log(Math.floor(2.6))
 
