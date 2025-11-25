@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Validation</title>
+</head>
+
+<body>
+
+<h2>Validation Using API</h2>
+
+<form id="myForm">
+    <label>Username:</label><br>
+    <input type="text" id="username" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" id="email" required><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<p id="message" style="color:red;"></p>
+
+<script>
+const form = document.getElementById("myForm");
+const message = document.getElementById("message");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();  // stop page from reloading
+
+    // check if form is valid
+    if (form.checkValidity()) {
+        message.style.color = "green";
+        message.textContent = "Form is valid!";
+    } else {
+        message.style.color = "red";
+        message.textContent = "Please fill out all fields correctly.";
+    }
+});
+</script>
+
+</body>
+</html>
