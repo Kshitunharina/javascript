@@ -11,7 +11,12 @@ console.log(result);
 function add(a, b) {
   return a + b;
 }
-add = (a, b) => a + b;
+
+
+var add = (a, b) => a + b;
+
+
+/** type conversion from dashboard */
 
 var a = "2";
 console.log(typeof a);
