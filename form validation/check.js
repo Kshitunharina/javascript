@@ -7,7 +7,7 @@ function validateForm() {
     return true;
 }
 
-
+// yes
 const form = document.getElementById("APIForms");
 const message = document.getElementById("message");
 
@@ -19,6 +19,7 @@ form.addEventListener("submit", function(event) {
         message.textContent = "Thanks for signing up! 👍";
     }
     else {
+        // yes
         message.style.color = "red";
         message.textContent = "⚠️ Please fill out the fields correctly! ⚠️";
     }
